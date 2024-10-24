@@ -1,0 +1,77 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carrusel de Imágenes</title>
+</head>
+<body>
+    <div class="carrusel">
+        <div class="images">
+            <img decoding="async" width="712" height="434" src="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image1.png" class="attachment-medium_large size-medium_large" alt="fast-resize_amer_hotel_image1" srcset="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image1.png 712w, https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image1-300x183.png 300w" sizes="(max-width: 712px) 100vw, 712px">
+            <img loading="lazy" decoding="async" width="712" height="434" src="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image2.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image2.png 712w, https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image2-300x183.png 300w" sizes="(max-width: 712px) 100vw, 712px">
+            <img loading="lazy" decoding="async" width="712" height="434" src="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image3.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image3.png 712w, https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image3-300x183.png 300w" sizes="(max-width: 712px) 100vw, 712px">
+            <img loading="lazy" decoding="async" width="712" height="434" src="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image4.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image4.png 712w, https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image4-300x183.png 300w" sizes="(max-width: 712px) 100vw, 712px">
+            <img loading="lazy" decoding="async" width="712" height="434" src="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image5.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image5.png 712w, https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image5-300x183.png 300w" sizes="(max-width: 712px) 100vw, 712px">
+            <img loading="lazy" decoding="async" width="712" height="434" src="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image6.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image6.png 712w, https://solarwindspartnersummit.com/wp-content/uploads/2023/12/fast-resize_amer_hotel_image6-300x183.png 300w" sizes="(max-width: 712px) 100vw, 712px">
+        </div>
+        <div class="controls">
+            <button class="prev" onclick="switchImage(-1)">&#10094;</button>
+            <button class="next" onclick="switchImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    
+
+
+
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+        
+        .carrusel {
+            position: relative;
+            width: 600px;
+            overflow: hidden;
+        }
+        
+        .images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .images img {
+            width: 600px;
+            height: auto;
+        }
+        
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        
+        button {
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        button:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        </style>
+</body>
+</html>
